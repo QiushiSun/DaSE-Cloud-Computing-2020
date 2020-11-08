@@ -71,5 +71,7 @@ MapReduce（Google：用什么处理这么海量数据？Map和Reduce！）
 
 #### Hadoop：分布式大数据计算的开源软件集合
 
-#### Hadoop出现后，才叫做“大数据”
+#### Hadoop出现后，才叫做“大数据”！
+
+Hadoop集群的使用请见Lab
 
