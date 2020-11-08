@@ -11,14 +11,35 @@
 
 Remarks: value可能是xml,json,文档...
 
+#### 为什么要使用Key-Value Storage
+
+1. 海量非结构化数据
+2. 大量随机读写
+3. foreign key和join很少使用
+
+#### Key-Value Storage的特性
+
+1. 非结构化存储
+2. 每一行的column不同
+3. 不一定要支持foreign key和join
+
+#### 存储方式
+
+1. row store：表中每一行存储在连续的地址空间，适合处理大量attribute和record，通常采用schema，RDBMS（关系型数据库）常使用row store
+2. column store：表中每一列存储在连续的地址空间，适合少量attribute的range search，通常采用key-value形式
+
+<img src="images/column-row-storage.png" alt="column-row-storage.png" style="zoom:45%;" />
+
 ------
 
-### NoSQL所面临的挑战
+#### NoSQL所面临的挑战
 
 1. SQL支持不足：往往不支持join等复杂查询
 2. 开源：没有统一标准，系统尚不成熟
 3. 功能不够丰富：通常用于随机读写非结构化数据，缺乏丰富函数的支持
 4. 文件容量通常比较大：JSON，Graph
+
+常见的云计算平台中的NoSQL服务：Google Cloud Datastore，Amazon DynamoDB，Azure Cosmos DB
 
 #### NewSQL：SQL和NoSQl的结合
 
@@ -32,5 +53,24 @@ Remarks:**ACID原则**是指[数据库管理系统](https://zh.wikipedia.org/wik
 
 ------
 
-### Snowflake
+### Google 三件套：GFS、BigTable、MapReduce
+
+#### HDFS/GFS非结构化存储
+
+分布式文件管理系统：
+
+1. 用来存储海量非结构化数据，如日志、网页、图片等
+2. GFS（Hadoop Distributed File System即为GFS的开源实现）
+
+GFS vs HDFS：https://www.slideshare.net/YuvalCarmel/gfs-vs-hdfs
+
+#### HDFS的架构
+
+<img src="images/HDFSArchitecture.png" alt="images/HDFSArchitecture.png" style="zoom:40%;" />
+
+#### HDFS 的特性$\rightarrow$ append only!
+
+读数据占多，很少去更新已经存在的文件，新数据仅仅是写在老数据后面，顺序地进行写入
+
+
 
