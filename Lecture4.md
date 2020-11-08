@@ -10,15 +10,19 @@
 4. MPI可以实现MapReduce的功能，但反之不然
 5. 缺少完善的容错机制，需要手动编写
 
-#### 为什么使用key-value存储
+1. Reading：https://mpi4py.readthedocs.io/en/stable/
 
-1. 海量非结构化的数据
-2. 大量随机读写
-3. 外键和join很少使用
+#### 其他分布式计算模型：BSP(Bulk Synchronous Parallel 整体同步并行计算)
 
-------
+以superstep为单位的大同步并行计算
+
+1. 并发计算：并行本地内存计算
+2. 通信：消息和数据交换
+3. 路障同步：等待所有并行计算完成 
 
 内存存储vs磁盘存储？newsql
+
+
 
 ### 分布式存储（**Distributed Storage System**）：
 
