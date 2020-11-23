@@ -20,7 +20,7 @@
 2. 文件存储（Block-level Storage）
 3. 对象存储（Object-level Storage）
 
-<img src="/Users/sunqiushi/Desktop/云计算应用与开发/Cloud-Computing/images/data-abstract.png" alt="data-abstract" style="zoom:50%;" />数据被存储在原始的磁盘卷（裸磁盘），文件被分割成固定大小的“块”，以多副本形式存储在磁盘之中。每个块被赋予唯一的ID，OS通过ID存取数据，读取文件时文件系统重新组装数据块。**数据和用户环境脱钩，可以分布在多个不同操作系统环境中，可以有多个存储路径。**
+<img src="images/data-abstract.png" alt="data-abstract" style="zoom:50%;" />数据被存储在原始的磁盘卷（裸磁盘），文件被分割成固定大小的“块”，以多副本形式存储在磁盘之中。每个块被赋予唯一的ID，OS通过ID存取数据，读取文件时文件系统重新组装数据块。**数据和用户环境脱钩，可以分布在多个不同操作系统环境中，可以有多个存储路径。**
 
 *在云环境中，数据块通过SAN(Storage Area Network)被存放在最合适的位置*
 
@@ -82,7 +82,7 @@
 
 下图为三种存储方式的总结
 
-#### <img src="/Users/sunqiushi/Desktop/云计算应用与开发/Cloud-Computing/images/3storage-architectures.png" alt="3storage-architectures" style="zoom:50%;" />
+#### <img src="images/3storage-architectures.png" alt="3storage-architectures" style="zoom:50%;" />
 
 #### 三种存储方式在云计算中的典型产品
 
