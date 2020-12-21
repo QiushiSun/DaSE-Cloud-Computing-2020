@@ -1,10 +1,12 @@
 ## 2020Fall 云计算应用与开发 
 
-### Lecture9 云计算的架构
+### Lecture9 云计算的架构 
 
 ##### 复习：云计算的五大基本特征（NIST）
 
 
+
+施工中...
 
 
 
@@ -47,10 +49,6 @@
 
 
 #### 动态可扩展架构（Dynamic Scalability Architecture）
-
-
-
-
 
 
 
