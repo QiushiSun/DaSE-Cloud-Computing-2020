@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>实现div滚动条默认最底部以及默认最右边</title>
+  <script type="text/javascript" src="jquery文件地址"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $('#scroll_div').scrollTop( $('#scroll_div')[0].scrollHeight);
+  $('#scroll_div').scrollLeft( $('#scroll_div')[0].scrollWidth);
+ });
+</script>
+<body>
+
+
+<div id="scroll_div" style="overflow-y:scroll; overflow-x:scroll;width:50px; height:300px; border:1px solid #F00;">
+  DIVCSS5测试内容，欢迎来到DIVCSS5学习DIV+CSS技术。大家可以通过DIVCSS5主站上的所有免费CSS教程足可学会DIV CSS技术 -如果需要深入系统学习、较短时间达到理想学习效果可参加DIV+CSS培训班学习。
+</div>
+</body>
+</html>
