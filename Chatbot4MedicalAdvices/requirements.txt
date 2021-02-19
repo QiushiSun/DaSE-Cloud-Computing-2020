@@ -10,7 +10,7 @@ async-timeout==3.0.1
 attrs==20.2.0
 backcall==0.2.0
 beautifulsoup4==4.9.3
-bleach==3.2.1
+bleach==3.3.0
 blis==0.4.1
 boto3==1.15.18
 botocore==1.18.18
@@ -25,7 +25,7 @@ colorama==0.4.4
 colorclass==2.2.0
 coloredlogs==14.0
 colorhash==1.0.2
-cryptography==3.2
+cryptography==3.2.2
 cycler==0.10.0
 cymem==2.0.3
 decorator==4.4.2
@@ -47,7 +47,7 @@ grpcio==1.32.0
 h11==0.9.0
 h5py==2.10.0
 httpcore==0.11.1
-httplib2==0.18.1
+httplib2==0.19.0
 httptools==0.1.1
 httpx==0.15.4
 humanfriendly==8.2
