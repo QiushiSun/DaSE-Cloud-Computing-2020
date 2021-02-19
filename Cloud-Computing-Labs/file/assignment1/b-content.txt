@@ -1,0 +1,6 @@
+usr 2
+app 1
+home 3
+lib 21
+include 10
+sys 35 
